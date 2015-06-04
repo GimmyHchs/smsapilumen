@@ -14,7 +14,7 @@
 $app->get('/', function() use ($app) {
     return $app->welcome();
 });
-$app->get('/home', function() use ($app) {
-    return $app->welcome();
-});
+$app->get('/home','App\Http\Controllers\HomeController@index');
+$app->get('/document','App\Http\Controllers\DocumentController@index');
+$app->get('/account','App\Http\Controllers\AccountController@index');
 

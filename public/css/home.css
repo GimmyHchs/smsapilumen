@@ -1,0 +1,23 @@
+body {
+  background-image: url('/img/bg1.jpg');
+  margin: 0;
+}
+#appitem{
+	margin-left: 50px;
+	color: white;
+	text-decoration:none;
+	font-family: 'Lato', sans-serif;
+}
+#appbar{
+	color: white;
+	font-size: 20px;
+	margin: 15px;
+	margin-top: 30px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+#div_bitbucket{
+	margin-right: 20px;
+	margin-top: -60px;
+}
+
