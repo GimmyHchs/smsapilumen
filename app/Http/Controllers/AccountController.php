@@ -7,6 +7,6 @@ class AccountController extends BaseController
     //
     public function index(){
 
-    	return "Account Routes";
+    	return view('account.index');
     }
 }

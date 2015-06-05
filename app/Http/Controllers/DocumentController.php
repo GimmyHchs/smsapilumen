@@ -7,6 +7,6 @@ class DocumentController extends BaseController
     //
     public function index(){
 
-    	return "Doucument Routes";
+    	return view('document.index');
     }
 }
