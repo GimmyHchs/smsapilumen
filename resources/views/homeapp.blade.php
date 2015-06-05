@@ -5,6 +5,7 @@
 	<title>SMS API Lumen</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Asap:400italic' rel='stylesheet' type='text/css'>
 	<link href="{{ url('/css/home.css') }}" rel="stylesheet">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -19,9 +20,14 @@
 		</ul>
 	    <div id="div_bitbucket" align="right"><a href="https://bitbucket.org/Genki-Taiwan/smsapilumen"><img src="{{url('/img/icon-bitbucket-small.png')}}" alt=""></img></a></div>
 
-<div class="container">
+
 	@yield('content')
-</div>
+	@yield('content2')
 
 </body>
+<footer>
+			<h3 id="font_lato">Footer</h3>
+			<h4 id="font_lato">SMS API Service Copyright © Mynet</h4>
+			<h4 id="font_lato" style="color:gray"><a style="text-decoration:none; color:gray" href="http://www.mynet.com.tw">Design by Hchs</a></h4>
+</footer>
 </html>
