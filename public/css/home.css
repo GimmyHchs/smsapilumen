@@ -30,6 +30,8 @@ footer{
 }
 #div_panel{
 	margin-top: 20px;
+	background-color: #E0E0E0;
+	box-shadow:3px 3px 12px black;
 }
 #font_lato{
 	color: #DCDCDC;
@@ -53,6 +55,11 @@ footer{
   	box-shadow:3px 3px 12px black;
     overflow:hidden;
   	border-radius: 10px;
+}
+#pic_content{
+	margin-top: 32px;
+	height: 128px;
+	width: 128px;
 }
 #pic_code{
 
