@@ -34,9 +34,6 @@ footer{
 	box-shadow:3px 3px 12px black;
 }
 #font_lato{
-	color: #DCDCDC;
-	text-decoration:none;
-	font-size: 90%;
 	font-family: 'Lato', sans-serif;
 }
 #font_asap{
@@ -73,5 +70,18 @@ footer{
 
 	margin-top: 200px;
 	margin-bottom: 50px;
+
+}
+.indextitle{
+
+	font-size: 200%;
+	margin-top: 256px;
+
+}
+.footerfont{
+
+	color: #DCDCDC;
+    text-decoration:none;
+    font-size: 90%;
 
 }
