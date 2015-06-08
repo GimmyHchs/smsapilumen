@@ -19,7 +19,7 @@ class ApiController extends BaseController
 
     	$everybody = new SMSCurl('hchs','jkl45682');
     	$everybody->setTarget([
-    			$target;
+    			$target
     		]);
     	$everybody->setMessage($message);
     	//$everybody->send();
