@@ -23,7 +23,7 @@ class ApiController extends BaseController
     		]);
     	$everybody->setMessage('我在測試中文簡訊');
     	//$everybody->send();
-    	dd($request);
+    	//dd($request);
     	return view('every8d.index');
     }
 
