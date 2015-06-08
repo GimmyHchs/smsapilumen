@@ -23,7 +23,7 @@ class ApiController extends BaseController
     		]);
     	$everybody->setMessage($message);
     	$everybody->send();
-    	dd($everybody->getUrl());
+    	//dd($everybody->getUrl());
     	//dd($request->get('Target'));
     	return view('every8d.index');
     }
