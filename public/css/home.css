@@ -60,6 +60,7 @@ footer{
 }
 #pic_code{
 
+	display: inline-block;
 	width: auto;
 	height: auto;
 	margin-left: auto;
@@ -84,4 +85,9 @@ footer{
     text-decoration:none;
     font-size: 90%;
 
+}
+.hchsfooter{
+	text-decoration:none; 
+	color:gray; 
+	font-size:70%;
 }

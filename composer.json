@@ -13,11 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Everybody\\" : "app/Apis/Everybody/"
         },
         "classmap": [
             "database/",
-            "app/Http/Controllers/"
+            "app/Http/Controllers/",
+            "app/Apis/Everybody/"
         ]
     },
     "autoload-dev": {

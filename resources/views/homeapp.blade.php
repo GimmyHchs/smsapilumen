@@ -28,6 +28,6 @@
 <footer>
 			<h3 id="font_lato" class="footerfont">Footer</h3>
 			<h4 id="font_lato" class="footerfont">SMS API Service Copyright © Mynet</h4>
-			<h4 id="font_lato" style="color:gray"><a style="text-decoration:none; color:gray; font-size:70%;" href="http://www.mynet.com.tw">Design by Hchs</a></h4>
+			<h4 id="font_lato" style="color:gray"><a class="hchsfooter" href="http://www.mynet.com.tw">Design by Hchs</a></h4>
 </footer>
 </html>
