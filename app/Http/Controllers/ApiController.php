@@ -14,15 +14,16 @@ class ApiController extends BaseController
 
     }
     public function every8d(Request $request){
+    	$target=$request->get('Target');
+    	$message=$request->get('MSG');
 
     	$everybody = new SMSCurl('hchs','jkl45682');
     	$everybody->setTarget([
-    		'0916023011',
-    		'0931055090',
-    		'0982704434'
+    			$target;
     		]);
-    	$everybody->setMessage('我在測試中文簡訊');
+    	$everybody->setMessage($message);
     	//$everybody->send();
+    	dd($everybody->getUrl());
     	dd($request->get('Target'));
     	return view('every8d.index');
     }
