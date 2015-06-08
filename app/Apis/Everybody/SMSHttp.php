@@ -1,5 +1,7 @@
 <?php namespace App\Apis\Everybody;
 
+use Exception;
+
 class SMSHttp{
 	var $smsHost;
 	var $sendSMSUrl;
@@ -7,7 +9,6 @@ class SMSHttp{
 	var $batchID;
 	var $credit;
 	var $processMsg;
-	//var $res;
 	
 	function SMSHttp(){
 		$this->smsHost = "api.every8d.com";
@@ -61,16 +62,15 @@ class SMSHttp{
 		} else {
 			$success = true;
 			$strArray = explode(",", $resultString);
-			//dd($strArray);
-			//$this->credit = $strArray[0];
-			//$this->batchID = $strArray[4];
+			$this->credit = $strArray[0];
+			$this->batchID = $strArray[4];
 		}
 		return $success;
 	}
 	
 	function httpPost($url, $postData){
-		//$res = "";
-        $result = "";
+		    $res="";
+        	$result = "";
 		$length = strlen($postData);
 		$fp = fsockopen($this->smsHost, 80, $errno, $errstr);
 		$header = "POST " . $url . " HTTP/1.0\r\n";
@@ -79,15 +79,17 @@ class SMSHttp{
 		$header .= $postData . "\r\n";
 		
 		fputs($fp, $header, strlen($header));
-		//dd(fgets($fp, 1024));
 		while (!feof($fp)) {
 			$res .= fgets($fp, 1024);
 		}
 		fclose($fp);
-		//dd($res);
-		$strArray = explode("\r\n", $res);
-		dd($strArray);
+		$strArray = explode("\r\n\r\n", $res);
+		if ( ! isset($strArray[1])) {
+			throw new Exception("Error here");
+			
+		}
 		$result = $strArray[1];
         	return $result;
 	}
 }
+?>

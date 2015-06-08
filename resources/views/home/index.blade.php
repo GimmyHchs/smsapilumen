@@ -1,4 +1,6 @@
 @extends('homeapp')
+
+
 @section('content')
 <div class="container">
 <div id="div_aligncenter">
@@ -8,9 +10,10 @@
 	<div id="div_code"><img id="pic_code" src="{{url('/img/homecodesample.png')}}"></div>
 </div>​
 </div>
-
-
 @endsection
+
+
+
 @section('content2')
 <section id="section2_panel">
 <div class="container">
