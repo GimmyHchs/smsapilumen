@@ -2,9 +2,9 @@
 @section('content')
 
 	 <div class="container">
-	 
-	 	<h1>Every8d</h1>
-
+	 	<div id="div_aligncenter">
+	 		<h1 id="font_lato">Every8d</h1>
+	 	</div>
 	 </div>
 
 @endsection
